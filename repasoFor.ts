@@ -12,9 +12,11 @@ function impares(numero)
      }
 }
 
-function arrayRevertido(arr)
+function arrayRevertido()
 {
-     return arr.reverse();
+    let frase = "Hola buenos días a todos desde Madrid";
+    let fraseReves = frase.split(" ").reverse().join(" ");
+    return fraseReves;
 }
 
 function coloresArcoiris(color) {
