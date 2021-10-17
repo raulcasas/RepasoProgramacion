@@ -17,11 +17,14 @@ function numPares(pares)
 function empiezaM(m)
 {
     let i = 0
-    while(i < nombres.length){
-        if(m[i][0] == "M"){
-            return ("Es " + true + " que el nombre " + m[i] + " empieza por la letra 'M'");
+    let inicioM = true
+    let resultado = "Todos los nombres empiezan por M"
+    while(i < nombres.length && inicioM == true){
+        if(m[i][0] != "M"){
+            resultado = "No todos empiezan por M"
+            inicioM = false
         }
         i++
     }
-    return ("Es " + false + " que el nombre " + m[i] + " empieza por la letra 'M'");
+    return resultado
 }  
